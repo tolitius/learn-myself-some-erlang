@@ -9,7 +9,7 @@ show_path_on_the_map( MapFile ) ->
     ParsedMap = string:tokens( binary_to_list( File ), "\r\n\t " ),
     ConvertedMap = [ list_to_integer( RoadCost )  || RoadCost  <- ParsedMap ],
     { OptimalPath, _} = lists:foldl( fun get_to_intersection/2, 
-                                     { [], b }, 
+                                     { [], a }, 
                                      convert_to_routes( ConvertedMap, [] ) ),
     OptimalPath.
 
