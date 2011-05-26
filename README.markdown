@@ -4,6 +4,8 @@ Playground for the awesome ["learn yourself some Erlang"](http://learnyousomeerl
 
 ### Things here are runnable via 'erl' interpreter
 
+![Treasure Map](https://github.com/anatoly-polinsky/learn-myself-some-erlang/raw/master/optimal-path/map.png)
+
 ```erlang
 1> c(optimal_path).                                
 {ok,optimal_path}
